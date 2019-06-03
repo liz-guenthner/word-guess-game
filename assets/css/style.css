@@ -53,6 +53,17 @@ h2 {
     margin: 30px 0;
 }
 
+h2.blinkMe {
+    animation: blinker 0.5s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 .columns {
     width: 100%;
 }
