@@ -73,12 +73,13 @@ h2.blinkMe {
     float:left;
 }
 .left-column #current-song {
-    margin:20px 0;
+    margin:20px 0 10px 0;
     font-size: 1em;
 }
 
 .left-column img {
     max-width: 200px;
+    width: 100%;
 }
 
 .right-column {
@@ -89,6 +90,10 @@ h2.blinkMe {
 .right-column p {
     padding: 0 10%;
     margin-bottom: 10%;
+}
+
+p.small-font {
+    font-size: 0.75em;
 }
 
 footer {
