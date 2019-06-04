@@ -3,8 +3,8 @@
     src: url(../fonts/jazzClub.ttf);
   }
 html, body {
-    height: 100%;
     margin:0;
+    background-color: #292929;
 }
 body {
     font-family:jazzClassFont;
@@ -12,10 +12,11 @@ body {
     margin: 0 auto;
     width:100%;
     background-color: #1281b4;
+    overflow: scroll;
 }
 .container {
     max-width:1000px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     overflow: hidden;
     background-image: url('../images/jazzBackground-1000x364.jpg');
     background-repeat: no-repeat;
@@ -30,27 +31,28 @@ body {
 #main-content {
     display: block;
     overflow:hidden;
-    margin: 20% 10% 0 10%;
     max-width: 675px;
+    margin: 10% 10% 0 5%;
 }
 
 h1 {
     font-family: jazzClassFont;
     color: #d8e3e8;
-    font-size:5em;;
+    font-size:2.5em;
     text-align:left;
 }
 
 .game-container {
     font-family: Arial, Helvetica, sans-serif;
     color: #d8e3e8;
-    margin: 40px 0;
+    margin: 20px 0;
     overflow:hidden;
 }
 
 h2 {
     font-size: 1.5em;
     margin: 30px 0;
+    padding-right:20px;
 }
 
 h2.blinkMe {
@@ -103,10 +105,12 @@ p.m-5 {
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
-    color: #292929;
-    background-color:#1281b4;
+    /* color: #292929;
+    background-color:#1281b4; */
+    background-color: #292929;
+    color: #1281b4;
     text-align:center;
     margin: 0 auto;
     position: fixed;
@@ -116,8 +120,16 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-
-    .container {
-
+    html {
+        background-color: #1281b4;
+    }
+    h1 {
+        font-size:4em;;
+    }
+    h2 {
+        padding-right:0;
+    }
+    #main-content {
+        margin: 15% 10% 0 10%;
     }
 }
