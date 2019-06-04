@@ -42,7 +42,7 @@ h1 {
     text-align:left;
 }
 
-.game-container {
+#game-container {
     font-family: Arial, Helvetica, sans-serif;
     color: #d8e3e8;
     margin: 20px 0;

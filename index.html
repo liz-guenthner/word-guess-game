@@ -11,37 +11,54 @@
 </head>
 
 <body>
-  <div class="container">
+
+ <div class="container">
 
     <div id="main-content">
           <h1>Jazz Word Game</h1>
           
-          <div class="game-container">
+          <div id="game-container">
             <h2 class="blinkMe">Guess the Jazz Artist...press any key to get started!</h2>
             <div class="columns">
               <div class="left-column">
-                <img src="assets/images/sonny-rollins-saxophone-colossus.jpg" alt="sonny-rollins-saxophone-colossus">
+                <div class="album-image">
+                    <img src="assets/images/sonny-rollins-saxophone-colossus.jpg" alt="sonny-rollins-saxophone-colossus">
+                </div>
                 <p id="current-song">Current Song:</p>
-                <p class="small-font">Sonny Rollins: Saxophone Colossus</p>
+                <div class="small-font" id="currentSong">Sonny Rollins: Saxophone Colossus</div>
               </div>
               <div class="right-column">
-                <p>Current word:</p>
-                <p>_ _ _ _ _ _ _ _ _ _ _</p>
-                <p class="m-5">Letters guessed:</p>
-                <p class="small-font">(Repeats aren't counted against you)</p>
-                <p class="m-5">Guesses remaining:</p>
-                <p class="small-font">(Total of 10 guesses)</p>
-                <p class="m-5">Wins:</p>
-                <p class="small-font">(Guess 5 words to win)</p>
-                <p class="m-5">Losses:</p>
-                <p class="small-font">(Miss 5 words to lose)</p>
+
+                  <p>Current word:</p>
+                  <div id="currentLetter"></div>
+                  <div id="hold"></div>
+
+                  <p class="m-5">Letters guessed:</p>
+                  <div id="lettersGuessed"></div>
+                  <p class="small-font">(Repeats aren't counted against you)</p>
+
+                  <p class="m-5">Guesses remaining:</p>
+                  <div id="guessRemaining"></div>
+                  <p class="small-font">(Total of 20 guesses)</p>
+
+                  <p class="m-5">Wins:</p>
+                  <div id="wins"></div>
+                  <p class="small-font">(Guess 3 words to win)</p>
+
+                  <p class="m-5">Losses:</p>
+                  <div id="losses"></div>
+                  <p class="small-font">(Miss 3 words to lose)</p>
+                  
+                  <!-- <button id="reset">Play again</button> -->
+                 
               </div>
             </div>
           </div>
          
-    </div><!-- main content -->
+    </div>
 
     <footer>Copyright &copy; 2019</footer>
   </div>
+  <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
 </body>
 </html>
