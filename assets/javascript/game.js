@@ -1,5 +1,10 @@
 // YouTube example https://www.youtube.com/watch?v=SvPtEr9tblU
 
+// Examples I will need:
+// document.getElementById("currentWord").innerHTML = "New text!";
+// document.getElementById("myImage").src = "landscape.jpg";
+// element.addEventListener("click", function(){ alert("Hello World!"); });
+
 // create array of words
 var words = ["davis", "coltrane", "mingus", "rollins", "ellington"];
 
