@@ -1,3 +1,5 @@
+// YouTube example https://www.youtube.com/watch?v=SvPtEr9tblU
+
 // create array of words
 var words = ["davis", "coltrane", "mingus", "rollins", "ellington"];
 
