@@ -28,9 +28,11 @@ var remainingLetters = word.length;
 while (remainingLetters > 0) {
   // show player their progress
   alert(answerArray.join(" ")); // puts spaces in between each space or letter
-  
+  // ****** my code: document.getElementById("currentWord").innerHTML = answerArray.join(" ");
+
   // get a guess from player
   var guess = prompt("Guess a letter, or click cancel to stop playing.");
+  // var guess = " ";
 
   // if guess is blank or cancel
   if (guess == null) {
@@ -40,6 +42,7 @@ while (remainingLetters > 0) {
   } else if (guess.length !== 1) {
     // alert to guess single letter only
     alert("Please enter a single letter.");
+    // ****** my code: document.getElementById("alertUser").innerHTML = "Please enter a single letter.";
     // valid guess 
   } else {
     // update game state with guess
@@ -59,5 +62,7 @@ while (remainingLetters > 0) {
 }
 // let player know the word 
 alert(answerArray.join(" "));
+// ****** my code: document.getElementById("currentWord").innerHTML = answerArray.join(" ");
 // congratulate the player
 alert("Good job! The answer was " + word);
+// ****** my code: document.getElementById("currentWord").innerHTML = "Good job! The answer was " + word;

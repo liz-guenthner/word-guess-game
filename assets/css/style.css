@@ -84,6 +84,18 @@ h2.blinkMe {
     width: 100%;
 }
 
+.album-image-container {
+    margin-bottom: 20px;
+}
+
+#currentSong {
+    margin: 5px 0;
+}
+
+.italicizeText {
+    font-style: italic;
+}
+
 .right-column {
     width:50%;
     float:right;

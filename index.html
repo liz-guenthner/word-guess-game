@@ -21,31 +21,29 @@
             <h2 class="blinkMe">Guess the Jazz Artist...press any key to get started!</h2>
             <div class="columns">
               <div class="left-column">
-                <div class="album-image">
-                    <img src="assets/images/sonny-rollins-saxophone-colossus.jpg" alt="sonny-rollins-saxophone-colossus">
+                <div class="album-image-container">
+                    <img id="album-image" src="assets/images/sonny-rollins-saxophone-colossus.jpg" alt="sonny-rollins-saxophone-colossus">
                 </div>
-                <p id="current-song">Current Song:</p>
-                <div class="small-font" id="currentSong">Sonny Rollins: Saxophone Colossus</div>
+                <p>Current Song:</p>
+                <div class="small-font" id="currentSong">Sonny Rollins: <span class="italicizeText">Saxophone Colossus</span></div>
+                <div id="alertUser"></div>
               </div>
               <div class="right-column">
                   <p>Current artist:</p>
                   <div id="currentWord"></div>
                   
-                  <p class="m-5">Letters guessed:</p>
+                  <p>Letters guessed:</p>
                   <div id="lettersGuessed"></div>
-                  <p class="small-font">(Repeats aren't counted against you)</p>
+                  <!-- <p class="small-font">(Repeats aren't counted against you)</p> -->
 
-                  <p class="m-5">Guesses remaining:</p>
-                  <div id="guessRemaining"></div>
-                  <p class="small-font">(Total of 20 guesses)</p>
+                  <p>Guesses remaining: <span id="guessesRemaining"></span></p>
+                  <!-- <p class="small-font">(Total of 20 guesses)</p> -->
 
-                  <p class="m-5">Wins:</p>
-                  <div id="wins"></div>
-                  <p class="small-font">(Guess 3 words to win)</p>
+                  <p>Wins: <span id="wins"></span></p>
+                  <!-- <p class="small-font">(Guess 3 words to win)</p> -->
 
-                  <p class="m-5">Losses:</p>
-                  <div id="losses"></div>
-                  <p class="small-font">(Miss 3 words to lose)</p>
+                  <p>Losses: <span id="losses"></span></p>
+                  <!-- <p class="small-font">(Miss 3 words to lose)</p> -->
               </div>
             </div>
           </div>
@@ -55,5 +53,6 @@
     <footer>Copyright &copy; 2019</footer>
   </div>
   <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+  </script>
 </body>
 </html>
