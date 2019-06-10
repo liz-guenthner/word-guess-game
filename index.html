@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,26 +25,31 @@
                 <div class="album-image-container">
                     <img id="album-image" src="assets/images/sonny-rollins-saxophone-colossus.jpg" alt="sonny-rollins-saxophone-colossus">
                 </div>
-                <p>Current Song:</p>
                 <div class="small-font" id="currentSong">Sonny Rollins: <span class="italicizeText">Saxophone Colossus</span></div>
-                <div id="alertUser"></div>
+                <div id="flash-message"></div>
               </div>
               <div class="right-column">
+                <div class="right-rows">
                   <p>Guess the artist:</p>
                   <div id="currentWord"></div>
-                  
+                </div> 
+                <div class="right-rows">
                   <p>Letters guessed:</p>
                   <div id="lettersGuessed"></div>
                   <!-- <p class="small-font">(Repeats aren't counted against you)</p> -->
-
+                </div>
+                <div class="right-rows">
                   <p>Guesses remaining: <span id="guessesRemaining"></span></p>
                   <!-- <p class="small-font">(Total of 20 guesses)</p> -->
-
+                </div>
+                <div class="right-rows">
                   <p>Wins: <span id="wins"></span></p>
                   <!-- <p class="small-font">(Guess 3 words to win)</p> -->
-
+                </div>
+                <div class="right-rows">
                   <p>Losses: <span id="losses"></span></p>
                   <!-- <p class="small-font">(Miss 3 words to lose)</p> -->
+                </div>
               </div>
             </div>
           </div>
@@ -52,7 +58,9 @@
 
     <footer>Copyright &copy; 2019</footer>
   </div>
-  <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+
+  <script type="text/javascript" src="assets/javascript/games.js"></script>
+  <!-- <script type="text/javascript" src="assets/javascript/games-original.js"></script> -->
   </script>
 </body>
 </html>

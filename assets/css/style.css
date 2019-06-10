@@ -86,7 +86,7 @@ h2.blinkMe {
 }
 
 .album-image-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #currentSong {
@@ -102,10 +102,12 @@ h2.blinkMe {
     float:right;
     margin:20px 0;
 }
-
-.right-column p {
+.right-rows {
     padding: 0 10%;
     margin-bottom: 10%;
+}
+.right-column p {
+    margin-bottom: 5%;
 }
 
 .small-font {
